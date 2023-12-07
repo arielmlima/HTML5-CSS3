@@ -5,7 +5,7 @@
 <a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE002/index.html">Exercicio 002</a>
 <a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE003/index.html">Exercicio 003</a>
 <a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE004/index.html">Exercicio 004</a>
-<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE005/index.html">Exercicio 005</a>
+<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE008B/index.html">Exercicio 005</a>
 <a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE006/index.html">Exercicio 006</a>
 <a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE007/index.html">Exercicio 007</a>
 <a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE008/index.html">Exercicio 008</a>
