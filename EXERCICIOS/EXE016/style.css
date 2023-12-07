@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+body{
+    background-image: linear-gradient(to right, blue, red)
+}
+main{
+    background-color: white;
+    /* border-radius vai arredondas as pontas e o box shadow vai criar uma sombra, e vamos definir as proporções (Lado, Baixo, e quanto vai se espalhar declarando px de pixels no final do valor) e a cor e transparencia (rgba)*/
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(5, 5, 112, 0.438);
+        /* Não quero que a cor branca ocupe a largura inteira ajusto isso no width, para expandir um pouco as bordas usamos o padding, e o margin: auto; usamos para deixar tudo centralizado, mesmo o usuário diminuindo e aumentando a janela do site.   */
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    color: rgb(69, 36, 255);
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+h2{
+    color: blueviolet;
+}
+p{
+    text-align: justify;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 140, 0, 0.158);
+        margin: 0px;
+    }
+    header {
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 10px;    
+    }
+
+    /* No nav vamos criar uma sombra, declaramos box-shadow: 1px 1px 1px black; deslocamento: horizontal vertical espalhamento. e cor da sombra, sempre que trabalha com sombras usar essa configuração 1 1 1 black  */ 
+    nav{
+        background-color: gray;
+        padding: 5px;
+        box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.568);
+        /* ou     box-shadow: 1px 1px 1px black; */
+    }
+    nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin: 10px;
+    }
+    
+    nav > a:hover {
+        text-decoration: underline;
+        background-color: black;
+    }
+    main {
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px 0px;
+        box-shadow: 1px 6px 10px 1px rgba(0, 0, 0, 0.541);
+    }
+    article { 
+        background-color: darkgray;
+        padding: 5px
+    }
+    article > aside {
+        background-color: gray;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+
+    }
+    footer > p {
+        margin: 0px;
+    }
+    #bola {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: aliceblue;
+        border-radius: 50%;
+    }
+</style>
+</head>
+
+<body>
+    
+<header>
+    <h1>Meu site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+</header>
+
+<!-- Existem sombras internas e externas no devtools -->
+
+<!-- O Elemento HTML de Navegação ( <nav> ) representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação. -->
+
+<!-- Chamamos tambem essas divs semanticas de grouping tags, onde podemos por uma dentro da outra sem problemas, exemplo por o section dentro do article e vice-versa. 
+    
+    Organizando o conteudo de forma muito mais pratica, com essas divs semanticas.
+-->
+<main>
+<section id="assuntos">
+    <article id="noticias">
+        <h2>Noticia sobre o Brasil</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit nisi, incidunt, quia voluptate excepturi sequi rerum animi delectus nulla est saepe sint in reprehenderit explicabo voluptates obcaecati culpa consequatur!</p>
+        <aside>
+            <p>Artigo escrito por Ariel Medeiros</p>
+        </aside>
+    </article>
+</section>
+</main>
+<footer>
+    <p>Desenvolvido pelo CursoemVideo</p>
+</footer>
+<div id="bola"></div>
+<!-- As tags de agrupamento eram duas: div e span -->
+<!-- Podemos montar os sites de forma semantica e vai ajudar muito nos algoritmos de busca -->
+</body>
+</html>
+
+<!-- No html 4, eram feitas assim e ainda podem ser pois não ficou obsoleto:
+    
+    <body>
+        <div>
+             <div id="cabeçalho">
+                <h1>
+                    
+                </h1>
+                <div id="menu">
+                
+                </div>
+            </div>
+            <div id="conteudo">
+            
+            </div>
+            <div id ="rodapé">
+        
+            </div>
+        </div>
+    </body>
+    -->
+
+    <!-- E vimos o método atual que proioriza semantica, antes não tinhamos essas tags semanticas que vimos abaixo disponibilizadas, basicamente funcionam como divs semanticas, e são divs semanticas : header(cabecalho), main(conteudo principal), footer(rodapé), nav (navegação) muito melhor de usar  -->
+
+    <!-- E fora essa temos session, article, aside  -->
+

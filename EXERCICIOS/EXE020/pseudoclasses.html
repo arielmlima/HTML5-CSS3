@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+<style>
+    div {
+        display: inline-block;
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+    }
+   /* div#d1 ou #d1{
+        background-color: aquamarine;
+    } */
+    div:hover {
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+  <div id="d1">01</div>
+  <div id="d2">02</div>
+  <div id="d3">03</div>  
+</body>
+</html>
+
+<!--Basicamente é um bloco. O elemento HTML Div define uma divisão ou seção em um documento HTML. No padrão vai até o fim da página mas pode ser modificado nos estilos. O elemento div é frequentemente usado como um contêiner para outros elementos, o que facilita na estilização de blocos. -->
+
+<!-- Usando alinhamento de bloco em linha: Para por uma do lado da outra usamos o comando:
+             display: inline-block;  -->
+
+ <!-- Vamos inserir id nas divs para diferencia-las em blocos diferentes e fazer configurações diferentes -->
+
+  <!-- Declarei uma nova no style: div#d1{
+background-color: aquamarine; }
+para diferenciar apenas um dos blocos, com outra tonalidade
+   -->
+
+ <!-- Fica a nosso criterio escrever div#d1 ou #d1 nessa nova linha -->
+
+ <!--
+    
+      # ID
+      . CLASS
+      : PSEUDOCLASSES (TEM DE ESTAR RELACIONADOS A O ESTADO DE UM DETERMINADO ELEMENTO: HABILITADO, VAZIO, ACTIVE, CHECKED, END, FIRST)
+    
+    -->
+
+    <!-- div: hover {
+        background0color: yellow;
+    }
+    Significa um estado temporario: enquanto eu tiver com o mouse em cima, aquela configuração vai acontecer, configuração de estado. (hover = Passando o mouse por cima) No caso a imagem fica amarela quando passa o mouse em cima.
+    -->

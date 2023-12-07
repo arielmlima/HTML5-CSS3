@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Abra em diferentes telas ou aumente e diminua o tamanho.</p>
+ <picture>
+    <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="imagem g">
+ </picture>   
+ 
+ <h1>Reproduzindo audios em Html5</h1>
+ <p>Vamos aprender a reproduzir audios no nosso site!</p>
+<audio src="" controls autoplay></audio>
+<!-- MP3, WAV, OGG -->
+<p>Outras formas de fazer</p>
+<audio preload="none" autoplay controls loop>
+<source src="media/dnb.mp3" type="audio/mpeg">
+<source src="media/dnb.wav" type="audio/wav">
+</audio>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+h1{
+    color: blueviolet;
+}
+
+h1#principal {
+    text-align: center;
+}
+h2{
+    color: darkgoldenrod;
+}
+
+.basico{
+    background-color: aqua;
+    color: blue;
+}
+
+.intermediario{
+    background-color: rgba(32, 226, 7, 0.514);
+    color: blue;
+}
+
+.avançado{
+    color: chocolate;
+}

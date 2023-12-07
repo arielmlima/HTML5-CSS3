@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif
+    }
+    div:hover {
+        color: red;
+        
+    }
+    div:hover > p { 
+     display: block;
+     color: white;
+        background-color: red;
+        width: 300px;
+    }
+   div > p {
+    display: none;
+   }
+    
+</style>
+</head>
+<body>
+  <h1>Exemplo de hover</h1>
+  <p>Passe o mouse sobre o texto</p>
+  <div>
+    Passe o mouse aqui
+    <p>TEXTO ESCONDIDO</p>
+</div>
+<p>Fim do exemplo</p>
+</body>
+</html>
+
+<!-- Para esconder um texto, criamos um paragrafo dentro de uma div no body, com um texto para ser ocultado.
+    
+    <div>
+    Passe o mouse aqui
+    <p>TEXTO ESCONDIDO... </p>
+    </div>
+
+    No head declaramos div > p que significa que p esta dentro da div. E dentro do estilo botamos a configuração: display: none; 
+
+    div > p {
+    display: none;
+
+    Tudo que for paragrafo e tiver dentro dessa div vai ser afetado e não vai aparecer, oque tiver fora aparece tranquilo, não afetando os outros p existentes no código
+
+    E para aparecer o que ocultamos quando passa o mouse em cima como faz? 
+
+    Declaramos no style mais uma div:
+
+     div:hover > p { 
+     display: block;
+     
+    
+-->
+
+<!--REVISÃO Pseudo-classes em CSS 
+
+Representadas por	:
+
+  ex: 	:active	:checked	:enabled	   :disabled	:corner-present	
+	        :empty	:end		:first	   :hover	        :double-button
+
+:hover	->	quando passa o mouse por cima acontece algo
+
+	ex:	div:hover {
+            	background-color: yellow;
+        	}
+
+div > p	-> parágrafo que está dentro da div (p é filho de div)
+
+Deixar texto de "p" invisível:
+	
+	div > p {
+	   display: none;
+	}
+
+Deixar texto de "p" visível quando passar o mouse em cima:
+  (útil para criar menu)
+
+	div:hover > p {
+	        display: block;
+	}
+
+<div>	->	é um espaço qualquer
+
+height	->	altura
+
+ width	->	largura
+
+border	->	borda		ex:	border: 1px solid black; (shorthand)
+
+display: inline-block; 	->	 tudo na mesma linha
+
+ -->

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            border: 20px solid black;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+
+            /* Ou podemos usar o border-image-repeat: scretch; */
+
+            /* Podemos usar o devtools para nos auxiliar aqui tambem */
+            /* Não usamos muito essa função, so se o cliente pedir */
+
+            /* SHORTHAND: Podemos simplificar tambem essas 3 linhas (border image source border image slice border image repeat) para simplesmente uma: border-image: url('borda.png') 27 repeat */
+
+            /* Cuidado não tire a borda normal. Se tirar a border inicial ela some tudo, tem que ter pra poder ser personalizada, apesar de estarmos adicionando uma imagem ja. Tem que existir uma borda pra segurar o local */
+        }
+    </style>
+</head>
+<body>
+    <h1>bordas</h1>
+</body>
+</html>

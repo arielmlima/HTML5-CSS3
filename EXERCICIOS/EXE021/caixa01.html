@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        /* Exemplo box-level*/
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray; */
+            /* Simplificando isso naquele ideia dos shorthands, vamos seguir a mesma ordem acima e usando o seguinte código, que dita a mesma coisa: */
+
+            border: 10px solid darkslategray;
+            /*Nessa ordem: espessura, estilo, cor */
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            padding: 10px 10px 10px 10px; 
+            /* Ou apenas padding: 10px; ja que todos os lados são iguais, basta informar uma vez */
+
+            /* margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; */
+/* Aqui na margem usamos apenas um para mostra oque vimos anteriormente */
+            margin: 10px;
+
+            /* Se eu quiser centralizar a margem posso fazer assim tambem:display: display: margin: 10px auto 10 px auto; centralizando automaticamente a margem da esquerda e direita no meio da tela */
+
+
+/* No outline vamos representar sem simplificação e depois com.
+Sem: */
+            /* outline-width: 5px;
+            outline-style: dashed;
+            outline-color: chocolate; */
+
+/* Com simplificação: */
+
+            outline: 5px dashed chocolate;
+
+            /* margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; */
+
+            /*Segue essa ordem cima direita baixo esquerda, sentido do relogio de meio dia pra frente.  */
+
+            /* Se declarar exemplo: padding: 10px 20px - significa 10px 20px 10px 20px */
+
+            /* margin: auto;  */
+
+            /* Ótimo para ganhar tempo, todo elemento que quiser por no meio da tela usar o margin:auto; se for uma caixa.
+            
+            Se for um texto põe um text-align: "center"; que funciona */
+        
+        }
+        /* inline-level */
+        a{ 
+             border-width: 3px;
+            border-style: dashed;
+            border-color: darkgoldenrod
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona.</p> 
+</body>
+</html>
+
+<!-- Aprendemos nessa aula a anatomia das caixas: margem > borda > padding > conteudo -->
+
+<!-- E vimos exemplos de box-level e inline-level: sendo que podemos alterar essas caixas que por padrão ja são definidas, basta digitar: 
+
+No estilo de h1 digitar display: inline; sendo que assim não podemos alterar altura e largura porque é um elemento inline autoxauto-->
+
+<!-- Ou no estilo de a(ancora/link) digitar display: block; e vai ocupar toda a largura de um site -->
