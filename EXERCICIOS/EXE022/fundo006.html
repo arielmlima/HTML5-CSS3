@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black; /* Importante a cor de fundo mesmo com imagem, pois vai carregar antes da imagem*/
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover; /* cobre a tela inteira mas não exibe 100% da imagem mas exibe 100% da viewport, cortando alguma coisa ou outra, testa o modo auto ou contain tambem(tamanho 100% da imagem) */
+            background-attachment: fixed; /* Vincúlo, fixed ou scroll, fixou ou rola o fundo junto. */
+
+            /* Temos como usar o Shorthand - background:  que é usar todas essas declarações background em uma só linha, seguindo essa ordem: 
+
+            color> image > position > repeat > [size] > attachment */ 
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed;
+        }
+        main{
+            background-color: white;
+            max-width: 400px; /* Em vez de usar width usa o max width */
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.
+        Enim cum iusto quae illo repudiandae voluptate magnam eligendi ipsum corporis ratione, nulla impedit. Voluptate voluptatibus dolore, delectus temporibus magnam tempore est corporis natus laboriosam aspernatur accusantium odit architecto dolorum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt at vel quos sit nam consectetur a officia. Corrupti alias velit sunt dicta, aspernatur laudantium neque debitis. Qui, beatae nesciunt.</p>
+
+            
+    </main>
+</body>
+</html>
