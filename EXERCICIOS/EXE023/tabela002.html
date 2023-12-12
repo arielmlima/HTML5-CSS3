@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray; ;
+        }
+        td.num{
+            text-align: right;
+        }
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+        #popul{
+            width: 50px;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        /* Efeito zebrado: De duas em duas linhas ele vai fazer o background selecionado. */
+        
+    </style>
+<!-- 
+Anatomia para tabelas grandes:
+TABLE
+    CAPTION (LEGENDA DA TABELA)
+    THEAD
+        TR, TD, TH
+    TBODY
+        TR, TD, TH
+    TFOOT
+         TR, TD, TH  
+
+         O navegador organiza para gente essa formatação independente da ordem que digitarmos. (THEAD, TBODY, TFOOD)
+
+         O W3C recomenda usar esses três em tabelas grandes.
+
+         No caption, que vem antes do thead nele não usamos tr nem td, apenas um texto.)
+
+         Sempre que for um dado td sempre que for um titulo th.
+
+         Definimos scope="col" pois se trata de uma coluna. Fazemos isso nos titulos das colunas, no thead.
+-->
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+    <table>
+        <caption>Polulação das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th class="a" id="popul" scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!-- Table Row(Nova linha) -->
+                <td>São Paulo</td>
+                <td class="num">44.411.238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td >Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.302.406</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">12.419.049</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.278.145</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">605.145</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">9.278.145</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.141.626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.444.380</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">9.444.380</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">44.380</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">12.444.380</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">8.444.380</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">154.380</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">11.448.380</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">14.320</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">10.332.431</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">18.403</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">14.380</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">134.120</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">1.443.380</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">4.434.330</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">11.144.380</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">15.434.380</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> 
+                <td class="num"><strong>214.300.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+<!-- Muito valioso, importante definir os escopos para os mecanismos de buscas nos acharem, mesmo não tendo resultado visual o scope, definimos que é na mesma linha com o ROW,e vimos anteriormente que o col é para coluna -->
