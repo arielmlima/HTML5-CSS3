@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela exercicios com responsatividade e </title>
+    <style>
+        body th, td{
+            width: 400px;
+            padding: 10px;
+            border: 1px solid black; 
+            text-align: center;
+            
+        }
+        table{
+            border-collapse: collapse;  
+        }
+        .destaque{
+            background-color: yellowgreen;
+        }
+
+        col.cnome{
+            background-color: yellow;
+        }
+        .csexo{
+            background-color: red
+
+        }
+        .cidade{
+            background-color: rgba(128, 0, 128, 0.281)
+        }
+        #container {
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <colgroup> <!-- Colgroup serve para podermos trabalhar com as colunas coletivamente, adicionando variaveis css a cada uma, segue a ordem das colunas as declarações. -->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade" span="2"> <!-- O span fez a cor servir para duas colunas como definido, apenas span -->
+        
+            </colgroup>
+            <caption>Cadastro</caption>
+        
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr class="destaque"> <!-- Aqui podemos modificar a linha inteira, adicionando a class css ao tr -->
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Jorge</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>30</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Paulo</td>
+                <td>M</td>
+                <td>33</td>
+                <td>Design</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
+
+<!-- Para tornar responsiva envelopamos tudo que estava no table, e botamos dentro de uma div que demos um id, no css criamos a id e nela definimos:
+overflow-x: auto;
+
+Overflow conteudo que transborda
+Que faz com que a rolagem x horizontal ou rolagem vertical y, ou as duas. -->

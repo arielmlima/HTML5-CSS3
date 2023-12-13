@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela desafio</title>
+    <title>Grupos Tabelas</title>
     <style>
         body > table {
             width: 500px;
@@ -22,60 +22,86 @@
             border: 1px solid black; 
             text-align: center;
         }
+        #responsividade{
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
  <h1>Exercicio Filmes</h1>   
- <table>
-<caption>Filmes Favoritos</caption>
-<thead>
-    <tr>
-        <th scope="col">Grupos</th>
-        <th scope="col">Nomes</th>
-        <th colspan="4" scope="col">Filmes</th>
-    </tr>
-</thead>
-    <tbody>
+ <div id="responsividade">
+     <table>
+     <caption>Filmes Favoritos</caption>
+     <thead>
         <tr>
-            <th rowspan="3">Mulheres</th>
-            <td>Ana Maria Santos</td>
-            <td>Alien</td>
-             <td>Rambo</td>
-             <td colspan="3">Vingadores</td>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="4" scope="colgroup">Filmes</th>
         </tr>
-        <tr>
-            <td>Beatriz Souza</td>
-            <td>Hulk</td>
-            <td>Inception</td>
-            <td colspan="3">Batman</td>
-        </tr>
-        <tr>
-            <td>Cláudia Melo</td>
-            <td>Oblivion</td>
-            <td>Matrix</td>
-            <td>Big Hero</td>
-        </tr>
-        <tr>
-            <th rowspan="3">Homens</th>
-            <td>Bruno Mendonça</td>
-            <td>Intocaveis</td>
-            <td>Amnésia</td>
-            <td>Gladiador</td>
-        </tr>
-        <tr>
-            <td>Daniel Lourenço</td>
-            <td>Wall-e</td>
-            <td>Oldboy</td>
-            <td colspan="3">Dangal</td>
-        </tr>
-        <tr>
-            <td>Fabiano Mota</td>
-            <td>StarWars</td>
-            <td>Taxi Driver</td>
-            <td>Toy Story</td>
-        </tr>
-    </tbody>
-    
- </table> 
+     </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                 <td>Rambo</td>
+                 <td colspan="3">Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td colspan="3">Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocaveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td colspan="3">Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>StarWars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+     
+     </table>
+ </div>
 </body>
 </html>
+
+
+<!-- 
+Todo th tem que ser definido o scope.
+    
+O colgroup no scope é usado quando um titulo de coluna abraange mais de uma coluna
+
+O rowgroup é usado quando o titulo da linha é responsavel por mais de uma linha
+
+col/ colgroup <> 
+row/ rowgroup \/ /\
+
+colspan: vai ocupar mais de uma coluna 
+rowspan: vai ocupar mais de uma linha 
+-->

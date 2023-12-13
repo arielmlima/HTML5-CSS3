@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos Tabelas</title>
+    <style>
+        body > table {
+            width: 800px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: gray;
+            
+        }
+        tbody{
+            padding: 10px;
+            
+        }
+        th, td{
+            border: 1px solid black; 
+            text-align: center;
+        }
+        .cinza{
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+ <h1>Exercicio Guanabas Tabelas</h1>   
+ <table>
+<caption>Desafio 2</caption>
+<thead >
+    <tr>
+        <th scope="col" rowspan="2">Área</th>
+        <th scope="col" rowspan="2">Discipinas</th>
+        <th colspan="2">Notas</th>
+        <th scope="col" rowspan="2">Média </th>
+        <tr>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+        </tr> 
+    </tr>
+</thead>
+    <tbody>
+        <tr>
+            <th scope="row" rowspan="4" >Exatas</th>
+            
+            <td>Matemática</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            
+        </tr>
+        <td>Física</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        
+        <tr>
+            <td>Quimica</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            
+
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            
+        </tr>
+        <tr class="cinza">
+            <th scope="row" colspan="4">Média de exatas</th>
+            <td>0</td>
+            
+            
+        </tr>
+        <tr>
+            <th scope="row" rowspan="2">Humanas</th>
+            <td>História</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            
+            
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            
+        </tr>
+        <tr class="cinza">
+            <th scope="row" colspan="4">Média de humanas</th>
+            <td>0</td>
+            
+        </tr>
+    </tbody>
+        </tr>
+    </tfoot>
+    
+ </table> 
+</body>
+</html>
+
+
+<!-- 
+Todo th tem que ser definido o scope.
+    
+O colgroup no scope é usado quando um titulo de coluna abraange mais de uma coluna
+
+O rowgroup é usado quando o titulo da linha é responsavel por mais de uma linha
+
+col/ colgroup <> 
+row/ rowgroup \/ /\
+
+colspan: vai ocupar mais de uma coluna 
+rowspan: vai ocupar mais de uma linha 
+-->
