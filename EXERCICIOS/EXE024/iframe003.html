@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+            color: blue;
+        }
+     </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, aliquid odit tenetur vel earum ipsum, facere esse perferendis deserunt sequi, aperiam inventore tempore voluptates! Nostrum dolore sit vitae aliquid. Eveniet!</p>
+
+    <ul>
+        <li><a href="paginas-extras/tabeladesafio.html" target="frame">Primeira página</a>
+        <li><a href="/EXERCICIOS/EXE023/tabela005.html" target="frame">Segunda página</a>
+        <li><a href="/EXERCICIOS/EXE023/tabela004.html" target="frame">Terceira página</a>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, facere accusamus odit quam quaerat temporibus. Ipsam aut molestiae animi odio ullam exercitationem obcaecati cupiditate necessitatibus iste. Exercitationem deserunt alias inventore?
+    Repellat, eligendi labore non consectetur voluptatibus facilis. Veritatis nisi id, labore corrupti eligendi natus minima nam iure libero incidunt fuga, aliquam iusto nesciunt magni exercitationem quo facere consectetur, autem ratione?</p>
+
+    <!-- Usaremos agora o srcdoc em vez do src para podermos escrever e puxar uma imagem para dentro exibindo uma imagem e uma mensagem inicial. Dentro deles botamos um h1 e um paragrafo e uma imagem. A imagem tem que ser em aspas simples. E normal aparecer partes vermelhas nessa parte do código. -->
+    <iframe id="tela" name="frame" srcdoc="<h1> Escolha uma das opçoes acima</h1> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ea odio vero non laborum! Doloribus magnam neque iusto consequatur dolor nisi excepturi, corporis impedit enim beatae unde itaque cum eveniet.</p><img src='imagens/download.png'>">
+      <p>Infelizmente seu navegador não é compativel com isso.</p>
+<!-- Adicionamos um id e um name ao iframe, o name será necessario para o target (na parte dos links <a>) reproduzir a página dentro do iframe. Damos o mesmo nome que declaramos em vez de usar o _blank. -->
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum, totam delectus aliquid labore, officiis expedita, architecto ut sunt magnam molestias odio quis laboriosam dolor quo rem molestiae? Ea, itaque!Lorem</p>
+</body>
+</html>
+
+<!-- Use mas não abuse. Eles são essenciais.
+    Cuidado com os iframes, não usar muito na página em conteudos principais, pois o bot do google pode não chegar a catalogar muito bem, e ele não aparecer indexado nas páginas principais, e a tradução muitas vezes não permite os iframes serem criptografados pelas tecnologias de acessibilidade. Em relação a segurança cuidado ao indexar outra pagina na sua, pois podem roubar seus dados sendo um site que foi invadido e voce ter ele ali no seu site. -->
