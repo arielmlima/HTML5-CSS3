@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando código que receba esse formulário que acabamos de criar ou não</title>
+</head>
+<body>
+     <h1>Meu site principal</h1>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus labore quisquam, laboriosam deleniti nulla praesentium eligendi, amet magnam non veritatis fugit asperiores, officiis et sequi perferendis perspiciatis nemo repellendus eaque!</p>
+     <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms  allow-scripts" referrerpolicy="no-referrer" frameborder="0" >
+        Seu navegador não é compativel com isso...
+     </iframe>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia placeat in necessitatibus ipsam consectetur. Minima corporis esse eos dolor porro, odio architecto nulla, a est, amet nam officiis molestiae.</p>
+     
+     
+    <!-- 
+        Para proteção do iframe: 
+
+        sandbox ="sandbox"  // Crio uma proteção em relação a ataques, não estou capturando mais nenhum tipo de informação, ele trava o envio mesmo que eu clique mil vezes.
+
+        referrerpolicy="no-referrer" //Lembra daquele lance de propaganda, algoritmo, coleta de dados para esses fins, vai bloquear isso. Serve para dizer que o conteudo carregado dentro do iframe não vai coletar nenhum tipo de informação do usuário, ligando o maximo de segurança esses dois parametros dentro do nosso iframe.
+
+        Se eu quiser que no site deixe executar o formulario? Para que nosso formulário passe a funcionar:
+
+        sandbox="allow-same-origin allow-forms allow-scripts"
+
+        Assim eu habilito a permissão de coisas da mesma origem, de formularios, e scripts.
+
+
+        E para tirar a borda feia do iframe? 
+        frameborder="0"
+     -->
+
+
+</body>
+</html>
