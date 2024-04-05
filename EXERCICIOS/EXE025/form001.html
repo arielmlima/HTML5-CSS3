@@ -7,11 +7,15 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <!-- Vamos criar um form e dentro dele o input tipo texto, toda caixa tipo texto tem que ter nome e id. -->
-    <form>
-       <p>Nome: <input type="text" name="nome" id="nome"> </p>
-       <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"> </p>
-       <p>Enviar: <input type="submit" value="Enviar"></p>
+    <!-- Vamos criar um form e dentro dele o input tipo texto, toda caixa tipo texto tem que ter name e id. Para fazer a relação entre eles, envelopamos a palavra, e digitamos label, dentro do for botamos a id, visualmente não muda nada, mas profissionalmente é a forma correta. -->
+
+    <!-- autocomplete off para desligar preenchimento automatico, e para enviar os dados para o formulario, action e o arquivo em php. -->
+
+    
+    <form action="cadastro.php" autocomplete="off">
+       <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"> </p>
+       <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"> </p>
+       <p><input type="submit" value="Enviar"></p>
     </form>
 
     <!-- Essa é uma forma rasa de fazer, pois nada esta recebendo esses dados, eles se perdem ou nem são enviados para nenhum lugar, e outra curiosidade, a palavra Nome e a caixa a frente onde se digita o nome, e na palavra Sobrenome a mesma coisa.
@@ -19,6 +23,36 @@
     Logo não existe ligação entre o controle e a palavra que vem antes
      
     Essa ligação entre campos é mega importante.
+
+    Para o php todo objeto de entrada tem que ter um name, importante tambem ter o id.
+
+    Não se faz formulario sem relacionar, se eu clicar em cima da palavra note que a caixa fica pronta para receber um dado, e o algoritmo do google so vai me ajudar.
+
+    Criamos a relação entre essa palavra e esse objeto, com o label,e com isso tambem criamos uma area maior de toque por exemplo no celular, ajuda muito o usuario.
+
+    Note que os dados foram la para cima onde fica a URL, depois que chamamos o cadastro php. A interrogação divide oque é url dos dados, E se eu pedir usuario e senha vai la pra cima tambem? Tem como tirar os dados dali? É um padrão e temos que mudar o metodo. Note que até no google é assim, nossa query fica la em cima ao pesquisar algo, nossa solicitação.
+
+    Existem dois metódos para envio de formulário:
+    
+    method="GET"
+    COLOCA NO URL EM CIMA DA MINHA CABEÇA OS DADOS (DADOS VISIVEIS)
+
+    method="POST"
+    NÃO COLOCA NO URL OS DADOS (DADOS NÃO VISIVEIS)
+
+    Mesmo o site não funcionando pois nao fizemos o php, so para ter uma ideia, da para ver.
+
+    Lembrando que o post não protege seus dados, se eu inspecionar da para ver em network>headers>formdata todos os dados que botei na caixa. Para proteger temos que criptografar com https, que depois vamos ver mais para frente. 
+
+    Em que momento uso GET ou POST?
+
+    Se ta pedindo o nome do cara, quanto ele pesa, pode usar o get sem problema se não forem dados sensiveis. E para uma URL compartilhavel, é bom usar GET. NÃO pode usar mais de 3000 letras no formulario inteiro com o GET, campos sensiveis, e envios de fotos.
+
+    Sendo dados sensiveis, senhas, cartão, endereço usar o POST é mais recomendado.
+
+    -Dados sensiveis
+    -Imagens, arquivos no formulário
+    
 -->
 </body>
 </html>

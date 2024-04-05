@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Teste de Formuário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="10" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" required minlength="8" max="20" placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <!-- password: Novo type que aprendemos agora é o password, ele ja vem criptografado, com asteriscos.
+    
+    reset: E o tipo reset para limpar o formulário.
+
+    required: Notamos que ele tambem esta permitindo envio de formularios vazios, e isso nao pode ocorrer, sempre que um campo for obrigatorio vou por required. O proprio navegador vai exibir um preencha esse campo.
+
+    max-length: maximo de caracters
+    min-length: minimo de caracters
+
+    size: vai ajeitar a caixa para exibir tantas letras no caso o valor digitado, size = 10, vai caber 10 caracters a vista, e passando disso vem uma tela de rolagem lateral dentro da caixa adicionando os outros valores, muito util.
+
+    placeholder: deixa dentro da caixa uma dica/instrução do que é para por na caixa.
+
+    autocomplete: sugestões anteriores.
+
+    Note que se eu ponho autocomplete no form ele so vai me dar on e off, se eu ponho no input ele vai me dar varias opções, temos como fazer vários tipos de formularios: para texto, numeros, foto, telefone, sexo, usuário, nova senha, senha atual.
+
+    E assim o formulário funcionaria perfeitamente.
+    
+    
+    -->
+
+
+</body>
+</html>
