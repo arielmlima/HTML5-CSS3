@@ -49,6 +49,32 @@ section#telefone {
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height: 471px;
 }
+
+#redes-sociais{
+    text-align: right;
+    /* Botões na lateral direita */
+}
+
+#redes-sociais img{
+    width: 50px;
+    /* diminuir um pouco os itens */
+    margin: 10px; 
+    /* Separar um pouco os itens um do outro */
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.447);
+    box-sizing: border-box;
+    /* Para a borda fazer parte da caixa, que vamos definir abaixo ao passar o mouse em cima */
+
+}
+
+#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.682);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.607);
+    transition: transform .2s, border 1s;
+    /* GERAR UM MOVIMENTO DEPOIS DE 3 SEG */
+}
+
