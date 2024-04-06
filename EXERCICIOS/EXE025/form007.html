@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Exemplo Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p> 
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+
+                <option value=""selected>---Escolha ---</option>
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo
+                    </option>
+                    <option value="RJ">Rio de Janeiro
+                    </option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+<p>
+    <label for="">Mensagem: </label><br>
+    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    <!-- Usar POST nesse caso onde o usuário vai digitar um texto, certamente vai digitar um textão com mais de 3000 bites -->
+</p>
+
+
+
+    </form>
+</body>
+
+</html>
+
+<!-- Aqui vamos botar os estados dentro de uma caixinha, com as opções para clicar ja definidas, por serem muitos estados. -->
+<!-- Nesse caso em vez do input vamos usar o select, e dentro dele option para cada valor. -->
+
+<!-- Posso tambem agrupar eles com o optgroup e dar um label que nesse caso botamos a região especifica -->
+
+<!-- Botamos um selected no estado sp para ficar como padrão ja que muita gente de sp vai entrar no site, mas depois tiramos e botamos uma mensagem guia que geralmente fazem nos sites.
+
+
+No caso dos estados vão estar todos listados para escolher, mas se for algo que não seja isso, e não tenha na lista? Vamo usar DATALIST. O datalist botaremos um id para funcionar direitinho-->
