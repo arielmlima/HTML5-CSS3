@@ -9,6 +9,13 @@
 <body>
     <h1>Exemplo de formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- Fazendo tipo radio, nesse tipo botamos os name igual das opções, para a bolinha marcar um OU outro. -->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="ifem" checked value="F"><label for="ifem">Feminino</label><br>
+            <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label><br>
+        </fieldset>
+<!-- Fazendo tipo checkbox -->
         <fieldset> 
            <legend>Esportes favoritos</legend>
 
@@ -24,6 +31,10 @@
         </p>
     </form>
     
-    5.47
+   <!-- NO RADIO TODAS AS BOLINHAS TEM O MESMO NAME.
+
+    Botamos value tambem, para recebermos o valor quando enviarmos o formulário.
+
+   CHECKED se eu quiser deixar marcada alguma opção padrão.-->
 </body>
 </html>
