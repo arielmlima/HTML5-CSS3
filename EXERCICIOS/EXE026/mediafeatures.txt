@@ -1,0 +1,5 @@
+Algo que ficou no ar quando se fala de telas/screen é que elas tem varios tamanhos, e não tem um media type para cada tamanho de tela. Mas para esse problema, existe o MEDIA FEATURES que vai nos ajudar a configurar cada uma dessas telas.
+
+Media Query = media type + media features 
+
+5m 30aula

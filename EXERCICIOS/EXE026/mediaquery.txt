@@ -1,0 +1,18 @@
+
+ Media Query/Queries? Temos telas de diferentes tamanhos o seu celular e da sua vó. Temos notebooks, desktops, televisão, pegar um site e imprimir. E algumas que não servem para consumir conteudo por exemplo applewatch...Se seu site tiver dificuldade em se adaptar em uma dessas midias, você vai ter que aprender media query!   
+
+ Vamos no site no newyork times por exemplo, la se eu clicar control+p ele vai me exibir uma versão para impressão em papel, bonitinha! Sem cabeçalho clicavel, logos clicaveis, anuncios e outras materias clicaveis da página que não fariam sentido estar ali, tirou o rodapé e coisas que não precisam fora da versão de tela, gerando uma versão de estilo para telas e outra para impressora, se achatarmos a tela vemos que comporta perfeitamente em ipad, ou achatando mais vemos que para celular tambem, o site fica bem mais reduzido e simples de entender, isso é mediaquery, tendo uma versão para cada um! Formas diferentes de apresentar meu conteudo.
+
+
+  MATERIAL DE APOIO
+
+O que são Media Queries em CSS
+
+	- Media query, nada mais é do que uma estrutura do CSS que permite aplicar estilizações especificas para uma página web de acordo com certas condições, fazendo assim com que esta página possa se adequar ao layout de tela em diferentes tamanhos e tipos de mídia.
+
+Principais media types:
+
+media	="print"   	-> para impressoras;
+		="screen"	-> para monitores de computadores, tablets e smartphones;
+		="handheld"	-> para dispositivos de mão;
+		="all"		-> para todos os tipos de mídia.
