@@ -1,6 +1,137 @@
 @charset "UTF-8";
 /* Todas as demais midias. Note que mesmo nao tendo o all la no html ele ainda é all, e esses comandos @media aqui em baixo que vao fazer o filtro, so para oque nos queremos. */
 
+/* TYPICAL DEVICE BREAKPOINTS W3C
+
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200
+*/
+
+/* IMPRESSÃO */
 @media print {
 
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        /* Desnecessario pois não funciona background na impressão */
+        background-image: url(../imagens/back-print.jpg); 
+        
+    }
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main::after{
+        content: 'Essa impressão foi feita por: www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+    img#phone {
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: block;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+
 }
+
+/* Como ja fizemos o modelo de dispositivos moveis antes (mobilefirst), não vamos precisar fazer isso aqui: 
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (mix-width: 600px) and (max-width: 768px) {} */
+
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {
+        display: none;
+    }
+    #tablet{
+        display: block;
+        /* Vai exibir */
+    }
+    #print{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone {
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+    #tv{
+        display: none;
+    }
+}
+
+/* GRANDES TELAS */
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        /*Ah, Achei pequeno o quadrado do main na tela grande, aumentamos: */
+        width: 700px;
+    }
+    img#phone {
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
+}
+
+
+
+
+/* Vê que começa a ficar extenso quando agrupamos varias medias em um CSS só? Podemos repartir sem problemas e linkar os outros tambem, pode ser melhor para você  */
+
