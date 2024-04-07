@@ -1,1 +1,26 @@
 @charset "UTF-8";
+/* Configurações gerais */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    /* Geralmente se usa o cover, mas ia ficar sobrando coisa de fora, o contain pode ser muito melhor nesses casos! */
+    background-repeat: no-repeat;
+
+}
+h1{
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    padding: 10px;
+
+}
+
+/* Note que essas configurações são para todos os formatos, independente de estar deitado em pé, essas configurações acima vão servir para todas as situações
+ */

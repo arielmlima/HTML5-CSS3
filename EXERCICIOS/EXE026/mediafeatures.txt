@@ -12,6 +12,10 @@ E fora isso, vemos que usamos nos dois estilos algumas partes iguais o código �
 
 Os media features vem dentro de parenteses.
 
+Vamos ver o media feature orientation:
+
+<link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+
 <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
 
 Quando uso media posso usar media types e tambem media features. media type não tem parenteses, media features sim, se tiver 3 media features são 3 parenteses.

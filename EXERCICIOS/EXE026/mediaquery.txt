@@ -16,3 +16,6 @@ media	="print"   	-> para impressoras;
 		="screen"	-> para monitores de computadores, tablets e smartphones;
 		="handheld"	-> para dispositivos de mão;
 		="all"		-> para todos os tipos de mídia.
+
+
+		VAMOS USAR MEDIA QUERIES EM TODO PROJETO BEM DIZER, SÃO MUITO IMPORTANTES.
