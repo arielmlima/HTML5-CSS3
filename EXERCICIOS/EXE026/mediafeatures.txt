@@ -1,5 +1,17 @@
-Algo que ficou no ar quando se fala de telas/screen é que elas tem varios tamanhos, e não tem um media type para cada tamanho de tela. Mas para esse problema, existe o MEDIA FEATURES que vai nos ajudar a configurar cada uma dessas telas.
+Algo que ficou no ar quando se fala de telas/screen é que elas tem varios tamanhos, e não tem um media type para cada tamanho de tela. 
+
+Mas para esse problema, existe o MEDIA FEATURES que vai nos ajudar a configurar cada uma dessas telas.
 
 Media Query = media type + media features 
 
-5m 30aula
+Media type: Tipo de midia
+
+Media features: Caracteristicas de midia 
+
+E fora isso, vemos que usamos nos dois estilos algumas partes iguais o código é escrito da mesma forma, e é para isso que vamos utilizar o tipo all.
+
+Os media features vem dentro de parenteses.
+
+<link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+
+Quando uso media posso usar media types e tambem media features. media type não tem parenteses, media features sim, se tiver 3 media features são 3 parenteses.
