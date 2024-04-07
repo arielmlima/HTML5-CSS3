@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* O @media all é opicional. */
+
+@media all{
+
+    /* declarações gerais */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    padding: 10px;
+
+}
+
+}
+
+
+/* declarações retrato */
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+
+    }
+
+
+}
+
+/* declarações paisagem */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: left bottom;
+
+    }
+}
+
+ /* Criamos um @media screen para uma tela retrato e outro paisagem, note que usamos um and e o parenteses, e logo apos chaves para la dentro fazermos nosso estilo especifico, colamos nosso código anterior lá dentro nossas declarações.  */
+
+ /* Essa forma pode ser mais confusa, ou não, mas tambem temos que aprender, é um modo novo de se fazer. */

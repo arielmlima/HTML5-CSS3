@@ -19,3 +19,5 @@ Vamos ver o media feature orientation:
 <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
 
 Quando uso media posso usar media types e tambem media features. media type não tem parenteses, media features sim, se tiver 3 media features são 3 parenteses.
+
+Note que usamos um and depois do screen e ai vem o parenteses com o orientation.
