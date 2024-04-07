@@ -1,0 +1,21 @@
+Geralmente, se constroi o site e depois é tirado varias coisas para fazer a versão mobile.
+
+Porque não começar fazendo a versão mobile primeiro?
+
+Dai vem o nome MOBILE FIRST.
+
+Primeiro fazer o movel, depois ir reposicionando as coisas sem remover pedaços como era proposto anteriormente, depois da versão movel estar tudo okay, vamos so reposicionando as coisas. Abordagem legal demais.
+
+VANTAGENS USANDO MOBILE FIRST:
+
+FACILIDADE NA DIVULGAÇÃO DO SEU SITE: (Algoritmo do google da prioridade a sites com mobilefirst, o cara que inventou trabalha no Google).
+
+MELHORIA NA EXPERIENCIA DO USUARIO:
+Pesa muito menos, pois é pensada em ser algo leve, feita para mobile,  diferente de uma adaptação que pode ser muito mais pesada ao reformular para mobile. 
+
+AUMENTO DE CREDIBILIDADE: Quem ta visitando nota a diferença, a rapidez, o acesso facil, site leve, paises com baixa internet conseguiriam acessar.
+
+
+
+
+
