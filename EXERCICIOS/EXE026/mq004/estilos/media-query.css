@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* Todas as demais midias. Note que mesmo nao tendo o all la no html ele ainda é all, e esses comandos @media aqui em baixo que vao fazer o filtro, so para oque nos queremos. */
+
+@media print {
+
+}
