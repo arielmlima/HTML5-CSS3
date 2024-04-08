@@ -20,5 +20,10 @@
 <a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE017/index.html">Exercicio 017</a>
 <a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE018/index.html">Exercicio 018</a>
 <a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE019/index.html">Exercicio 019</a>
-<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE020/index.html">Exercicio 020</a>
-<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE021/index.html">Exercicio 021</a>
+<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE020/pseudoclasses.html">Exercicio 020</a>
+<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE021/caixa02.html">Exercicio 021</a>
+<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE022/fundo006.html">Exercicio 022</a>
+<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE023/tabeladesafio.html">Exercicio 023</a>
+<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE024/iframe004.html">Exercicio 024</a>
+<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE025/form10.html">Exercicio 025</a>
+<a href="https://arielmlima.github.io/HTML5-CSS3/EXERCICIOS/EXE026/mq005/index.html">Exercicio 026</a>
