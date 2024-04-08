@@ -24,14 +24,13 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    /* Alinhamento no centro a forma antiga */
+    
     overflow: hidden;
     /* Tudo que tiver fora da borda fica escondido */
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
 
@@ -39,6 +38,8 @@ section#login{
     transition-timing-function: ease;
     /* Pequena animação 
     Suavização na transição (ease)*/
+    transform: translate(-50%, -50%);
+    /* Alinhamento no centro a forma antiga */
 
 }
 section#login > div#imagem {
@@ -53,4 +54,94 @@ section#login > div#formulario {
     display: block;
     padding: 10px;
 
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > input[type=submit]{
+    display: block; /* Posicionar em uma linha só */
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    /* Cursor de clique */
+}
+
+form >div.campo {
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+div.campo > span{
+    color: white;
+    /* background-color: black; */
+    font: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    
+    height: 90%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-5px);
+    
+    
+    /* Sempre que for uma animação/transformação para fazer, faça na ultima linha do seletor. */
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+    border: none;
+}
+form > input[type=submit]:hover{
+    background-color: #2d6462;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    
+    color: #2d6462;
+    border: 1px solid #49a09d;
+    border-radius: 7px;
+    text-decoration: none;
+    background-color: white;
+}
+
+form > a.botao:hover{
+    background-color: #2d6462;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
 }
