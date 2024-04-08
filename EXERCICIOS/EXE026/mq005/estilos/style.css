@@ -19,7 +19,7 @@ header > h1 {
     text-align: center;
 }
 
-span#burguer{
+span#iburguer{
     background-color: rgb(49, 49, 49);
     color: white;
     display: block;
@@ -27,7 +27,7 @@ span#burguer{
     padding: 10px;
 }
 
-#burger:hover{
+#iburger:hover{
     background-color: white;
     color: black;
 }
